@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Mongoose connection – NEW CODE
 var mongoose = require('mongoose');
-mongoose.connect(process.env.DB_CONN_GA_EXPRESS);
+mongoose.connect(process.env.DB_CONN_ALPACA_APP);
 
 app.use('/', routes);
 app.use('/users', users);
